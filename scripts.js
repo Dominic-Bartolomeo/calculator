@@ -12,8 +12,6 @@ function subtract(n1,n2){
 
 // Multiply
 function multiply(n1,n2){
-    console.log(n1)
-    console.log(n2)
     let num = n1 * n2;
     return Math.round(num * 1000) / 1000;
 }
@@ -30,22 +28,26 @@ function divide(n1,n2){
 
 // Operate
 function operate(equation){
-    let split_equation = equation.split("");
+    let split_equation = equation.split(" ");
     let result = 0;
-    // console.log(split_equation)
-    // let test_arry = [];
-    for(let i = 0; i < split_equation.length; i++){
-        let n1 = parseFloat(split_equation[i++]);
-        // console.log("String Num:" + n1);
-        let op = split_equation[i++];
-        // console.log("Operator:" + op);
-        let n2 = parseFloat(split_equation[i]);
-        // console.log("String Num:" + n2);
-        // test_arry.push(n1)
-        // test_arry.push(op)
-        // test_arry.push(n2)
-        // console.log(test_arry);
+    let n1, n2, tempresult;
+    let done = false;
+    let tempDone = false;
 
+    for(let i = 0; i<split_equation.length;i++){
+        if(tempDone){
+            console.log("Second n1")
+            n1 = tempresult;     
+        }else{
+            console.log("First n1")
+            n1 = parseFloat(split_equation[i]);
+            i++    
+        }
+   
+        let op = split_equation[i];
+        i++
+        n2 = parseFloat(split_equation[i]);
+    
         if (op == "+") {
             result = add(n1,n2);
         }else if(op == "-"){
@@ -57,6 +59,9 @@ function operate(equation){
         }else{
             return "Failure to operate."
         }
+        tempDone = true;
+        tempresult = result;
     }
+    
     return result;
 }

@@ -3,19 +3,20 @@ Roadmap:
 1. Create operation functions (+ - * /)
     - Test - :D
 
-2. Take input and separate into three variables (3 + 5 = 3, +, 5)
+2. Take input and separate into three variables (3 + 5 = 3, +, 5) - :D
 
-3. Use output of #2 to call the correct operation from #1
+3. Use output of #2 to call the correct operation from #1 - :D
 
 4. Create HTML/CSS calcuator (NO JS YET) with 0-9, (+ - * / =) and clear button
 
 5. Store and display the value that is clicked
 
 6. Should only calculate pairs at a time (PEMDAS doesn't matter)
-    - Round decimals to x point
+    - Round decimals to x point = :D
     - setup error conditions
     - setup /0 protections - :D
 
 
 TODO:
-Fix operate function, parameters are not being taken in correctly.
+- Account for more than one operator.
+    - check if more then one, then use result of previous two inputs with next var
