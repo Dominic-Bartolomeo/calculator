@@ -9,14 +9,13 @@ Roadmap:
 
 4. Create HTML/CSS calcuator (NO JS YET) with 0-9, (+ - * / =) and clear button
 
-5. Store and display the value that is clicked
+5. Store and display the value that is clicked - :D
 
 6. Should only calculate pairs at a time (PEMDAS doesn't matter)
-    - Round decimals to x point = :D
-    - setup error conditions
+    - Round decimals to x point - :D
+    - setup error conditions - "D
     - setup /0 protections - :D
 
 
 TODO:
-- Account for more than one operator.
-    - check if more then one, then use result of previous two inputs with next var
+- Solve more than 1 dot in a number

@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     
+    <div id="container">
+        <div id="calc-text"></div>
+        <div id="operators">
+            <div id="plus" class="op">+</div>
+            <div id="minus" class="op">-</div>
+            <div id="multiply" class="op">x</div>
+            <div id="divide" class="op">÷</div>
+            <div id="clear" class="non-op">Clear</div>
+        </div>
+        <div id="nums">
+            <button type="button" id="one"   class="number">1</button>
+            <button type="button" id="two"   class="number">2</button>
+            <button type="button" id="three" class="number">3</button>
+            <button type="button" id="four"  class="number">4</button>
+            <button type="button" id="five"  class="number">5</button>
+            <button type="button" id="six"   class="number">6</button>
+            <button type="button" id="seven" class="number">7</button>
+            <button type="button" id="eight" class="number">8</button>
+            <button type="button" id="nine"  class="number">9</button>
+            <button type="button" id="dot"   class="non-num">.</button>
+            <button type="button" id="zero"  class="number">0</button>
+            <button type="button" id="equal" class="non-num">=</button>
+        </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

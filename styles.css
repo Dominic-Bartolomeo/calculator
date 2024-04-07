@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    background-color: lightblue;
+    justify-content: space-evenly;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    width: 500px;
+}
+
+#calc-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: white;
+    height: 75px;
+    width:498px;
+    font-size: 50px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#operators {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.op {
+    background-color: #24a6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 85px;
+    border-radius: 0px;
+    border-color: black;
+    border-style: solid;
+    margin: -1px;
+    border-width: thin;
+    font-size: 50px;
+}
+
+.non-op {
+    background-color: #24a6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 85px;
+    border-radius: 0px;
+    border-color: black;
+    border-style: solid;
+    margin: -1px;
+    border-width: thin;
+    font-size: 50px;
+}
+
+#nums {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.non-num {
+    background-color: #24a6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168.5px;
+    height: 85px;
+    border-radius: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: -1px;
+    font-size: 50px;
+}
+
+.number{
+    background-color: #2cc9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168.5px;
+    height: 85px;
+    border-radius: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: -1px;
+    font-size: 50px;
+   
+}
+
+
+
+
